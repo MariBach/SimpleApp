@@ -4,6 +4,7 @@
   "description": "demo",
   "author": "",
   "license": "ISC",
+  "type":"module",
   "dependencies": {},
   "devDependencies": {},
   "scripts": {}
