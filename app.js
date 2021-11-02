@@ -1,17 +1,25 @@
-//5.Move classes to separate files and import them into the app using import/export.
-import Vehicle from "./vehicle.js";
-import Car from "./car.js";
-import Truck from "./truck.js";
+import Animals from './animals.js';
+import Mammals from './mammals.js';
+import Birds from './birds.js';
+import Fish from './fish.js'; 
+let rabbit = new Animals("Rabbit", "Mammals", "Herbivovers", 15);
+let wolf = new Mammals("Wolf", "Mammals", "Carnivores", 17);
+let sparrow = new Birds("Sparrow", "Birds", "Seed-eating", 20);
+let tuna = new Fish("Tuna", "Fish", "Carnivores", "Ocean", 70)
+Animals.displayBreeth();
+rabbit.displayAbility();
+console.log('--------------------------------------------');
+wolf.displayInfo();
+wolf.displayAbility();
+console.log('--------------------------------------------');
+sparrow.displayInfo();
+sparrow.displayUnique();
+sparrow.displayAbility();
+console.log('--------------------------------------------');
+tuna.displayInfo();
+tuna.displayUnique();
+tuna.displayAbility();
 
-let volvo = new Car("XC60", 2015, 220);
-let auto = new Vehicle("BMW", 2019, 210);
-let kamaz = new Truck("KAMAZ", 2010, 100);
-auto.displayInfo(); //3.Call method of father’s class.
-volvo.displayInfo();
-volvo.transportPeople();
-kamaz.displayInfo();
-kamaz.transportContainer();
-Vehicle.LicenseCheck(); //call static method; output: 'License: required'*/
 
 
 
