@@ -9,7 +9,7 @@ export default class Birds extends Animals {
     displayUnique() {
         console.log(`${this.type} can fly`)
     }
-        displayInfo() {
+    displayInfo() {
         console.log(`${this.name} belongs to ${this.type}, ${this.diet}`)
     }
     
